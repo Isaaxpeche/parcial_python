@@ -1,6 +1,6 @@
 # control_tareas.py
 # Sistema de control de tareas - CLI
-# Requisitos: modularidad, estructuras anidadas, uso de listas/tuplas/diccionarios.
+
 
 from typing import List, Dict, Tuple, Optional
 
@@ -8,7 +8,7 @@ from typing import List, Dict, Tuple, Optional
 ESTADOS: Tuple[str, ...] = ("pendiente", "en progreso", "completada")
 
 # --- Datos en memoria ---
-usuarios: List[Dict] = []   # cada usuario es un dict con campos y lista de tareas (anidada)
+usuarios: List[Dict] = []   # cada usuario es un dict con campos y lista de tareas 
 tareas: List[Dict] = []    # cada tarea es un dict con referencia al id_usuario
 
 # --- Helpers / Utilidades ---
@@ -284,10 +284,10 @@ def main_menu():
             print("Opción inválida.")
 
 if __name__ == "__main__":
-    # Datos de ejemplo para pruebas (opcional)
-    # crear 2 usuarios de ejemplo
+ 
     usuarios.append({"id": "U1", "nombre": "Ana", "identificacion": "1001", "contacto": "ana@ej", "rol": "dev", "tareas": []})
     usuarios.append({"id": "U2", "nombre": "Luis", "identificacion": "1002", "contacto": "luis@ej", "rol": "qa", "tareas": []})
 
-    # arrancar menú
+
     main_menu()
+
